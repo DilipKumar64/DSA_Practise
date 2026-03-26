@@ -1,0 +1,45 @@
+🔹 Problem: Find Maximum Element
+
+Input: [3, 7, 2, 9, 5]
+Output: 9
+
+💡 Approach:
+Start with first element
+Compare with each element
+Keep updating max
+int findMax(List<int> arr) {
+  int max = arr[0];
+
+  for (int i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+
+  return max;
+}
+⏱ Complexity:
+Time → O(n)
+Space → O(1)
+
+
+-------------------------------
+👉 Problem 2:
+Move all zeros to end
+
+Input:  [0,1,0,3,12]
+Output: [1,3,12,0,0]
+
+q1. Maximum sum subarray of size k
+q2. Find average of all subarrays of size k
+    Input: [1,3,2,6,-1,4,1,8,2], k=5  
+    Output: [2.2, 2.8, 2.4, 3.6, 2.8]
+3. Maximum element in every subarray of size k
+    Input: [1,3,-1,-3,5,3,6,7], k=3  
+    Output: [3,3,5,5,6,7]
+4. First negative number in every window of size k
+    Input: [12,-1,-7,8,-15,30,16,28], k=3  
+    Output: [-1,-1,-7,-15,-15,0]
+5. Maximum element in every subarray of size k
+    Input: [1,3,-1,-3,5,3,6,7], k=3  
+    Output: [3,3,5,5,6,7]
